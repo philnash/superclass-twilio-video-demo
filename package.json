@@ -1,0 +1,15 @@
+{
+  "name": "video",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "twilio-run --env -f"
+  },
+  "devDependencies": {
+    "twilio-run": "^2.0.0-beta.11"
+  },
+  "engines": {
+    "node": "8.10.0"
+  }
+}
