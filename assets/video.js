@@ -23,7 +23,6 @@ window.addEventListener('load', () => {
   }
 
   function participantDisconnected(participant) {
-    console.log('Disconnected: ', participant);
     participant.removeAllListeners();
     const el = document.getElementById(participant.identity);
     el.remove();
@@ -41,7 +40,6 @@ window.addEventListener('load', () => {
   }
 
   function trackUnpublished(trackPublication) {
-    console.log(trackPublication);
     trackPublication.track.detach().forEach(function(mediaElement) {
       mediaElement.remove();
     });
@@ -67,7 +65,6 @@ window.addEventListener('load', () => {
         };
         window.addEventListener('beforeunload', tidyUp);
         window.addEventListener('pagehide', tidyUp);
-        window.addEventListener;
       }
     );
   }
@@ -89,7 +86,6 @@ window.addEventListener('load', () => {
         login.setAttribute('hidden', true);
         chat.removeAttribute('hidden');
         startVideoChat();
-        console.log(token);
       });
   });
 });

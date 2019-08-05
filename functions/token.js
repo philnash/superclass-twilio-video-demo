@@ -6,8 +6,6 @@ function normalize(string) {
 }
 
 exports.handler = async function(context, event, callback) {
-  // Change these values for your use case
-  // REMINDER: This identity is only for prototyping purposes
   const identity = normalize(event.identity);
   const ROOM = 'Superclass';
 
